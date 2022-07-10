@@ -4,24 +4,19 @@ import Home from "./pages/Home";
 import Edit from "./pages/Edit";
 import Diary from "./pages/Diary";
 import New from "./pages/New";
-import RouteTest from "./components/RouteTest";
 
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-      <h1>logo</h1>    
+      <div className="App">
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/Edit" element={<Edit />}/>
-          <Route path="/Diary" element={<Diary />}/>
-          <Route path="/New" element={<New />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/Edit" element={<Edit />} />
+          <Route path="/Diary" element={<Diary />} />
+          <Route path="/New" element={<New />} />
         </Routes>
-        <RouteTest />
-        </div>
-      </BrowserRouter>
-      
-    
+      </div>
+    </BrowserRouter>
   );
 }
 
