@@ -13,11 +13,14 @@ const Edit = () => {
 
   const mode = searchParams.get("mode");
   console.log("mode: ", mode);
-
+  //setSearchParams는 QS를 변경시킬 수 있다.
   return (
     <div>
       <h2>Edit</h2>
       <p>여기는 Edit</p>
+      <button onClick={() => setSearchParams({ who: "shinetiger" })}>
+        QS 바꾸기
+      </button>
     </div>
   );
 };
