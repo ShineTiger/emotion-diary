@@ -34,6 +34,15 @@ const Edit = () => {
       >
         홈으로 가기
       </button>
+
+      <button
+        //뒤로 가기 : 한번만 뒤로가면 -1을 해준다
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        홈으로 가기
+      </button>
     </div>
   );
 };
