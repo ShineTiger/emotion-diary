@@ -9,6 +9,14 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <h2>App.js</h2>
+
+        {/* process.env 를 이용해서 경로를 가져다가 바로 쓸 수 있다.  */}
+        <img src={process.env.PUBLIC_URL + `/assets/emotion1.png`} />
+        <img src={process.env.PUBLIC_URL + `/assets/emotion2.png`} />
+        <img src={process.env.PUBLIC_URL + `/assets/emotion3.png`} />
+        <img src={process.env.PUBLIC_URL + `/assets/emotion4.png`} />
+        <img src={process.env.PUBLIC_URL + `/assets/emotion5.png`} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Edit" element={<Edit />} />
