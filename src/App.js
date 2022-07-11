@@ -6,6 +6,10 @@ import Diary from "./pages/Diary";
 import New from "./pages/New";
 
 function App() {
+  //process.env.PUBLIC_URL 정상적으로 되지 않을때
+  const env = process.env;
+  env.PUBLIC_URL = env.PUBLIC_URL || ""; //env.PUBLIC_URL 이 참이면 url을 담고 아니면 빈값으로 둬라
+
   return (
     <BrowserRouter>
       <div className="App">
