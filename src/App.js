@@ -34,7 +34,7 @@ function App() {
         <MyButton
           text={"버튼"}
           onClick={() => alert("디폴트")}
-          type={"asdf"}
+          type={"asdfasdffgfdg"}
         ></MyButton>
 
         {/* process.env 를 이용해서 경로를 가져다가 바로 쓸 수 있다.  */}
