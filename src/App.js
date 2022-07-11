@@ -5,6 +5,9 @@ import Edit from "./pages/Edit";
 import Diary from "./pages/Diary";
 import New from "./pages/New";
 
+//components
+import MyButton from "./components/MyButton";
+
 function App() {
   //process.env.PUBLIC_URL 정상적으로 되지 않을때
   const env = process.env;
@@ -14,6 +17,12 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <h2>App.js</h2>
+
+        <MyButton
+          text={"버튼"}
+          onClick={() => alert("버튼클릭")}
+          type={"positive"}
+        ></MyButton>
 
         {/* process.env 를 이용해서 경로를 가져다가 바로 쓸 수 있다.  */}
         <img src={process.env.PUBLIC_URL + `/assets/emotion1.png`} />
