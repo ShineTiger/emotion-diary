@@ -20,8 +20,21 @@ function App() {
 
         <MyButton
           text={"버튼"}
-          onClick={() => alert("버튼클릭")}
+          onClick={() => alert("긍정")}
           type={"positive"}
+        ></MyButton>
+        <MyButton
+          text={"버튼"}
+          onClick={() => alert("부정")}
+          type={"negative"}
+        ></MyButton>
+        <MyButton text={"버튼"} onClick={() => alert("디폴트")}></MyButton>
+
+        {/* type가 엉뚱하게 들어갔을때  */}
+        <MyButton
+          text={"버튼"}
+          onClick={() => alert("디폴트")}
+          type={"asdf"}
         ></MyButton>
 
         {/* process.env 를 이용해서 경로를 가져다가 바로 쓸 수 있다.  */}

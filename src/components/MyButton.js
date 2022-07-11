@@ -2,6 +2,10 @@
 //ex: text는 '삭제', type은 Negatvie, onClick은 이벤트..
 
 const MyButton = ({ text, type, onClick }) => {
+  //defalutProps 말고도 타입 데이터를 배열로 만들고, includes 메소드를 통해 솎아낸다.
+  //type으로 받아온 값은 배열에 적혀진값에 포함includes 되어 있는가? 없다면 default를 반환한다.
+  const btnType = ["positive", "negative"].includes(type) ? type : "default";
+
   return (
     <button
       //className은 문자열로 전달을 해야해서 join 메소드를 사용한다.
